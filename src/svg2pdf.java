@@ -13,8 +13,12 @@ public class svg2pdf {
 
 	public static void main(String[] args) {
 		try {
+			if (args.length < 2)
+				return;
+			
 			String svgFile = args[0];
 			String pdfFile = args[1]; 
+			
 	        //Step -1: We read the input SVG document into Transcoder Input
 	        String svg_URI_input = Paths.get(svgFile).toUri().toURL().toString();
 	        TranscoderInput input_svg_image = new TranscoderInput(svg_URI_input);        
