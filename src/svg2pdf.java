@@ -33,7 +33,6 @@ public class svg2pdf {
 			pdf_ostream.flush();
 			pdf_ostream.close();  
 		} catch (IOException | TranscoderException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
